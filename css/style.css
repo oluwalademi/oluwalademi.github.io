@@ -1,0 +1,217 @@
+.section,
+.section * {
+  box-sizing: border-box;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin: 0px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+}
+.section-1 {
+  background: #f2f2f2;
+  padding: 64px 80px 0px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  min-height: 300px;
+}
+.container {
+  min-width: 543px;
+  max-width: 1440px;
+  padding: 4px 20px 4px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  row-gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  flex-shrink: 0;
+  place-content: center;
+}
+.section-1-left {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+  min-width: 330px;
+}
+
+.section-1-right {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 450px;
+  height: 450px;
+  min-width: 300px;
+  min-height: 300px;
+  align-self: stretch;
+  aspect-ratio: 1;
+}
+.holder {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: left;
+  justify-content: left;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+.description-1{
+  color: #000000;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size:  24px;
+  font-weight: 500;
+  align-self: stretch;
+  font-weight: bold;
+}
+.computer-scientist {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 45.73px;
+  text-align: left;
+  max-width: 700px;
+  aspect-ratio: 670/45.73;
+  flex: 1;
+}
+.description-2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  font-weight: bold;
+  align-self: stretch;
+}
+.user-pics {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 461.81px;
+  min-width: 290px;
+  min-height: 326.65px;
+  object-fit: cover;
+  aspect-ratio: 410/461.81;
+}
+
+
+
+
+.frame-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.heading-text {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.skill-s {
+  color: #000000;
+  text-align: left;
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  position: relative;
+  flex: 1;
+  height: 44px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.work-holder {
+  padding: 8px 0px 8px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2 {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  transition: padding 0.13s, box-shadow 0.13s;
+}
+.frame-2:hover{
+    padding: 12px 25px 12px 15px;
+    box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.6);
+}
+
+.icons{
+  width: 30px;
+  height: 30px;
+}
+.details-icon-txt {
+  color: #000000;
+  text-align: left;
+  font-family: "Outfit-Medium", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+
+
+
+
+
+
+.flex-direction {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+}

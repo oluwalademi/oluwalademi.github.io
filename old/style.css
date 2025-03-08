@@ -1,0 +1,146 @@
+.body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0px;   
+  justify-content: center; 
+  display: flex; 
+  align-items: center;
+  flex-direction: column;
+}
+
+.home{
+  background-image: linear-gradient(#fff8f880, #fff8f880), linear-gradient(90deg, #ae9694 0%, #ceae95 100%);
+  filter: drop-shadow(0 3px 20px #0009);
+  width: 100%;
+  min-width: 543px;
+  max-width: 1440px;
+  background-color: #000000;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0px;
+}
+.header{
+  filter: drop-shadow(0 3px 20px #0009);
+  background-color: #310020;
+  border-bottom: 2px solid #8c143a;
+  width: calc(4px + 100%);
+  margin: 0;
+  flex: 1fr;
+  display: flex;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+}
+.bodied{
+  background-color: #000000;
+  margin: 0px;
+  display: flex;
+  z-index: 0;
+  align-self: stretch;
+  height: 700px;
+}
+.mini-header{
+  flex-flow: row;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  display: flex;
+}
+.sub-mini-header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+  gap: 0px 40px;
+}
+.split-1{
+  flex: 1;
+}
+.split-2{
+  flex: 1;
+}
+.oluwalademi{
+  color: #fff;
+  font-family: Outfit;
+  font-size: 58px;
+  font-weight: 700;
+  flex: 1;
+  padding-left: 52;
+}
+.nav-link{
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: start;
+  display: flex;
+  flex: 1;
+  padding: 0px 50px 0px 50px;
+  min-width: 300px;
+  border: 2px solid #ffffff;
+}
+.nav-link-item{
+  color: #ff0000;
+  text-align: left;
+  color: #fff;
+  flex-shrink: 0;
+  font-family: Outfit;
+  font-size: 100%;
+  font-weight: 400;
+  gap: 9900px;
+  flex: 1;
+}
+.section-1{
+    flex-flow: row wrap;
+    display: flex;
+    align-self: stretch;
+    background-color: #f2f2f2;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 350px;
+    gap: 80px;
+    row-gap: 20px;
+    padding:  4px 20px 4px 20px;
+}
+.container-left{
+  display: flex;
+  flex: 1;
+  min-width: 330px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container-right{
+  display: flex;
+  flex: 1;
+  min-width: 330px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  display: flex;
+  flex: 1;
+  align-self: stretch;
+  padding: 0px 80px;
+  align-self: stretch;
+}
+.computer-scientist{
+  align-self: stretch;
+}
+.user-pics{
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 461.81px;
+  min-width: 290px;
+  min-height: 326.65px;
+  object-fit: cover;
+  aspect-ratio: 410/461.81;
+}

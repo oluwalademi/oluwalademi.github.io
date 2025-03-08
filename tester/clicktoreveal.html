@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Reveal - Styled</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        details {
+            width: 90%;
+            max-width: 600px;
+            background: #2a2a2a;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            border: 1px solid #444;
+        }
+
+        summary {
+            font-size: 18px;
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            outline: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        details[open] summary {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        details p {
+            background: #2a2a2a;
+            padding: 15px;
+            margin: 0;
+            line-height: 1.6;
+            border-top: 1px solid #444;
+        }
+
+        a {
+            color: #ff7eb3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <details>
+        <summary>🚀 Wigwe University Job Openings</summary>
+        <p>Wigwe University is hiring for multiple positions, including CTO, CSO, Graphic Designer, and Internal Auditor.  
+        <a href="https://www.wigweuniversity.edu.ng/vacancies/" target="_blank">Apply here</a>.</p>
+    </details>
+
+    <details>
+        <summary>🤝 Volunteering Opportunities</summary>
+        <p>No specific volunteering roles are listed, but you can contact the university at  
+        <a href="https://www.wigweuniversity.edu.ng/" target="_blank">this link</a> for inquiries.</p>
+    </details>
+
+</body>
+</html>
