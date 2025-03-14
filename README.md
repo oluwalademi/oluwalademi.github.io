@@ -26,4 +26,4 @@ Real-World Projects: Developing and refining interactive experiences
 📩 Let’s Connect!
 If you're passionate about HCI, game design, or interactive experiences, feel free to connect! 🚀
 
- Web Portfolio link: oluwalademi.github.io
+ Web Portfolio link: [oluwalademi.github.io](https://oluwalademi.github.io/)
