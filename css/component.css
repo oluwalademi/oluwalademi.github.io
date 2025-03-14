@@ -29,6 +29,11 @@
     font-weight: 550;
     font-family: "Outfit-Regular", sans-serif;
 }
+@media (max-width: 580px) {
+  .project-text{
+    font-size: 30px;
+  }
+}
 .icons-dashed-arrow{
     padding-right: 20px;
     position: absolute;
@@ -457,27 +462,6 @@
   width: 64px;
   border: 2px solid rgba(0, 0, 0, 0.523);
   background: linear-gradient(to bottom, #08000090, rgba(49, 0, 32, 0.597));
-}
-.footer{
-  width: 100%;
-  background-color:rgb(49, 0, 32);
-  transform: rotate(180deg);  
-  box-shadow: 0px -10px 20px 20px rgba(0, 0, 0, 0.3);
-}
-.footer-container{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  gap: 20px;
-  flex: 1;
-  padding: 0px 60px;
-  width: 100%;
-  font-weight: bold;
-  font-size: 20px;
-  color: white;
-  transform: rotate(-180deg);
 }
 
 
