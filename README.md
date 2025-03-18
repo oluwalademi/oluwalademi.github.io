@@ -12,7 +12,7 @@ With a strong foundation in **computer science** and a deep passion for **game d
 
 ### 🔬 Research Focus  
 I am currently advancing my research in **HCI and game design & development**, focusing on:  
-✅ How **serious games** and **VR technology** enhance player engagement, learning, and accessibility.  
+✅ How **serious games** enhance player engagement, learning, and accessibility.  
 ✅ Developing **interactive storytelling** techniques that drive deeper emotional connections.  
 ✅ Optimizing **game physics** and UI/UX to improve user experience in digital environments.  
 
@@ -21,7 +21,8 @@ As a dedicated **developer, researcher, and mentor**, I actively contribute to *
 
 ### 📚 Continuous Learning  
 I am always expanding my knowledge through:  
-- **Online Courses:** Coursera, Udemy  
+- **Online Courses:** Coursera, Udemy
+- **YouTube Tutorial:** Brackeys, Imphenzia
 - **Books:** *Unity in Action* by Joseph Hocking  
 - **Real-World Projects:** Developing and refining interactive experiences  
 
