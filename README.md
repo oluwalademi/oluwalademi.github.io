@@ -22,7 +22,7 @@ As a dedicated **developer, researcher, and mentor**, I actively contribute to *
 ### 📚 Continuous Learning  
 I am always expanding my knowledge through:  
 - **Online Courses:** Coursera, Udemy
-- **YouTube Tutorial:** Brackeys, Imphenzia
+- **YouTube Tutorials:** Brackeys, Imphenzia
 - **Books:** *Unity in Action* by Joseph Hocking  
 - **Real-World Projects:** Developing and refining interactive experiences  
 
