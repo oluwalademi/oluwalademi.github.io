@@ -51,3 +51,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     scrollContainer.addEventListener("scroll", updateDots);
 });
+
+
+document.querySelectorAll(".project-btn-more").forEach(element => {
+    element.addEventListener("click", () => {
+      window.location.href = "../pages/prototype-project.html"; // Change to your desired link
+    });
+  });
+
+document.querySelectorAll(".project-btn").forEach(element => {
+    element.addEventListener("click", () => {
+      window.location.href = "../pages/prototype-project.html"; // Change to your desired link
+    });
+  });

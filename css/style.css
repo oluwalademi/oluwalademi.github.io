@@ -36,7 +36,7 @@
 @media (max-width: 935px) {
 
   .section-1 {
-    padding-top: 100px; /* Reduce padding for smaller screens */
+    padding-top: 124px; /* Reduce padding for smaller screens */
   }
   .nav-bar {
     gap: 28px;
@@ -234,12 +234,6 @@
   justify-content: flex-start;
 }
 
-
-
-
-
-
-
 .flex-direction {
   display: flex;
   flex-direction: column;
@@ -248,4 +242,101 @@
   justify-content: center;
   align-self: stretch;
   flex-shrink: 0;
+}
+
+
+
+.about-text
+{
+  color: #414141;
+  text-align: left;
+  font-family: "Outfit-Bold", sans-serif;
+
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  line-height: 2;
+  width: 100%;
+  padding-bottom: 200px;
+}
+
+.about-text-container{
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border-bottom: 2px solid black;
+  align-self: stretch;
+  margin-bottom: 20px;
+}
+
+.about-text h1 {
+  text-align: right;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0;
+  color: #8c143a;
+  text-align: left;
+  position: relative;
+}
+
+@media (max-width: 630px) {
+  .about-text h1 {
+    font-size: 2rem;
+  }
+}
+
+.about-text .center-text {
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #420317;
+  text-align: left;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.about-text .highlight {
+  color: #310020;
+  font-weight: bold;
+}
+
+.about-text .btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.about-text .btn {
+  padding: 12px 24px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #dddddd;
+  color: #000000;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.about-text .btn:hover {
+  background: #353535;
+  color:rgb(0, 109, 226);
+}
+
+.project-images{
+  width: 100%;
+  height: 100%;
 }
