@@ -1,0 +1,815 @@
+.main-frame,
+.main-frame * {
+  box-sizing: border-box;
+}
+.section-project {  
+  width: 100%;
+  min-width: 543px;
+  max-width: 1440px;
+  margin: 0 auto;
+  
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+}
+.main-frame {
+    padding: 40px 80px 60px 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    
+    margin: auto 0;
+    align-self: stretch;
+
+    flex-shrink: 0;
+    min-width: 543px;
+    max-width: 1440px;
+    position: relative;
+    
+  background: linear-gradient(
+      to left,
+      rgba(255, 248, 248, 0.5),
+      rgba(206, 174, 149, 0.5)
+    ),
+    linear-gradient(
+      90deg,
+      rgba(174, 150, 148, 1) 0%,
+      rgba(206, 174, 149, 1) 100%
+    );
+}
+.contain {
+  display: flex;
+  flex-direction: row;
+  --min-gap: 15px;
+  gap: var(--min-gap);
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
+.contain2 {
+  display: flex;
+  flex-direction: row;
+  row-gap: 42px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex: 2;
+  gap: var(--min-gap);
+  width: 100%;
+  min-width: 780px;
+  /* minwidth 383*/
+  overflow: hidden;
+}
+@media (max-width: 945px) {
+  .contain2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 420px;
+    flex-wrap: nowrap;
+    overflow: visible;    
+  }
+}
+.contain3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 392px;
+  min-width: 383px;
+  position: relative;
+  overflow: hidden;
+}
+.contain4 {
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 424px;
+  position: relative;
+}
+.contain5 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.placeholder-text {
+  color: var(--color-grey-8, #151515);
+  text-align: left;
+  font-family: var(
+    --sarawavreillewebflowio-semantic-heading-5-upper-font-family,
+    "IbmPlexMono-Medium",
+    sans-serif
+  );
+  font-size: var(
+    --sarawavreillewebflowio-semantic-heading-5-upper-font-size,
+    17px
+  );
+  line-height: var(
+    --sarawavreillewebflowio-semantic-heading-5-upper-line-height,
+    24px
+  );
+  font-weight: var(
+    --sarawavreillewebflowio-semantic-heading-5-upper-font-weight,
+    500
+  );
+  text-transform: uppercase;
+  position: relative;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contain6 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 590px;
+  position: relative;
+  object-fit: cover;
+}
+.contain7 {
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 380px;
+  position: relative;
+  overflow: hidden;
+  
+  flex: 1;
+}
+.contain8 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  background-color: #15151572;
+}
+.contain9 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 592px;
+  position: relative;
+  /*object-fit: cover;*/
+  object-fit: none;
+}
+
+.contain-third {
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 640px;
+  min-width: 380px;
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+.contain-third-one {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.contain-third-two {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 592px;
+  position: relative;
+  overflow: hidden;
+}
+.contain-third-one-one {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 634.29px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 420/634.29;
+}
+.empty {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1280px;
+  height: 0px;
+  min-width: 300px;
+  max-width: 1280px;
+  position: relative;
+}
+.frame-38 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  min-width: 300px;
+  max-width: 1280px;
+  position: relative;
+}
+.frame-382 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.cutwo-image-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  border: solid #15151572; 
+  border-width: 0 3;
+}
+.cutwo-image {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  object-fit: cover;
+}
+.empty2 {
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1280px;
+  height: 0px;
+  min-width: 300px;
+  max-width: 1280px;
+  position: relative;
+}
+.frame-73 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.frame-55 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-71 {
+  padding: 4px 0px 4px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 920.73px;
+  position: relative;
+  aspect-ratio: 844/920.73;
+}
+.frame-56 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  object-fit: cover;
+}
+.frame-562 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-383 {
+  padding: 4px 0px 4px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-362 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 475.14px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 844/475.14;
+}
+.frame-72 {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-59 {
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.heading-5-stitch-head-fabrique-d-images2 {
+  color: var(--color-grey-8, #151515);
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.heading-5-stitch-head-fabrique-d-images-2-span {
+  color: var(--color-grey-8, #151515);
+  font-family: "IbmPlexMono-Medium", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.heading-5-stitch-head-fabrique-d-images-2-span2 {
+  color: var(--color-grey-8, #151515);
+  font-family: "IbmPlexMono-Medium", sans-serif;
+  font-size: 10px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.frame-512 {
+  background: #c8bfbd;
+  padding: 0px 60px 0px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0.1px 0.1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.container2 {
+  background: linear-gradient(
+    270deg,
+    rgba(153, 153, 153, 1) 0%,
+    rgba(77, 103, 116, 1) 100%
+  );
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 308px;
+  height: 281.76px;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+}
+.frame-54 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 396px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-384 {
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 396px;
+  position: relative;
+}
+.frame-513 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-363 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 256.28px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 396/256.28;
+}
+.frame-39 {
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 396px;
+  position: relative;
+}
+.frame-57 {
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 392px;
+  position: relative;
+}
+.frame-514 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.frame-364 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 483px;
+  height: 592px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-58 {
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 396px;
+  position: relative;
+}
+.container3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 256.28px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-365 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 506.83px;
+  height: 328px;
+  position: absolute;
+  left: -77px;
+  top: -35.55px;
+  object-fit: cover;
+  aspect-ratio: 506.83/328;
+}
+.empty {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 0px;
+  min-width: 300px;
+  max-width: 1280px;
+  position: relative;
+}
+.car-frame {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  width: 100%;
+  min-width: 300px;
+  max-width: 1280px;
+  position: relative;
+}
+.car-frame-one {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.car-frame-two {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1280/508.61;
+}
+.car-frame-two-one {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+.container-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 100%;
+  position: relative;
+}
+.container-wrap-one {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  min-width: 440px;
+  max-width: 884px;
+  position: relative;
+}
+.container-wrap-one-one {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container-text {
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 36px;
+  position: relative;
+}
+.container-wrap-one-one-two {
+  padding: 4px 0px 4px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  aspect-ratio: 844/920.73;
+}
+.container-wrap-pics-one {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  object-fit: cover;
+}
+.container-wrap-one-two {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container-wrap-one-two-two {
+  padding: 4px 0px 4px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.container-wrap-pics-two {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: auto;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 844/475.14;
+}
+.container-wrap-one-three {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+}
+@media (max-width: 1035px) {
+  .container-wrap-one-three {
+    align-items: center;
+    justify-content: center;
+  }
+}
+.container-wrap-one-three-one {
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.container-wrap-two {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 396px;
+  min-width: 396px;
+  position: relative;
+  overflow: hidden;
+}
+.cwtwo-one {
+  padding: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 396px;
+  position: relative;
+}

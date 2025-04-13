@@ -195,7 +195,6 @@
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  overflow: hidden;
   width: 100%;
 }
 .testimonial-title {
@@ -239,7 +238,7 @@
 
 .pagination-dots {
   position: absolute;
-  bottom: 0;
+  bottom: -25;
   left: 0;
   right: 0;
   display: flex;
@@ -450,9 +449,9 @@
 }
 .scroll-info-image{
   position: absolute;
-  top: 0;
+  top: 60;
   right: 0;
-  bottom: 0;
+  bottom: -20;
   z-index: 1;
   display: flex;
 }
