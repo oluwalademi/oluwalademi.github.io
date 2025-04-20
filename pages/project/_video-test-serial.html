@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Cards</title>
+</head>
+<body>
+    <!-- Embed another HTML file (in this case, 'other-file.html') -->
+    <iframe src="p-graphics-babyshower.html" width="100%" height="500px"></iframe>
+
+
+  <!-- Prefab Template for Video Cards -->
+  <template id="video-card">
+    <div class="card" style="border: 1px solid #ccc; padding: 1em; margin: 1em; width: 560px;">
+      <div class="video-container" style="position: relative; width: 100%; height: 315px; cursor: pointer;">
+        <img
+          class="thumbnail"
+          src=""
+          alt="Play Video"
+          style="width: 100%; height: 100%; object-fit: cover;"
+        >
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                    background: rgba(0,0,0,0.3) url('https://img.icons8.com/ios-filled/100/ffffff/play-button-circled.png') center center no-repeat;
+                    background-size: 64px 64px;">
+        </div>
+      </div>
+      <div class="title">Title Placeholder</div>
+    </div>
+  </template>
+
+  <!-- Where video cards will appear -->
+  <div id="container"></div>
+
+  <script>
+    // Function to create a video card
+    function createVideoCard(video) {
+      const template = document.getElementById('video-card');
+      const clone = template.content.cloneNode(true);
+
+      // Set the thumbnail and title
+      const container = clone.querySelector('.video-container');
+      const thumbnail = clone.querySelector('.thumbnail');
+      const title = clone.querySelector('.title');
+
+      // YouTube Thumbnail and Video URL
+      if (video.type === 'youtube') {
+        thumbnail.src = `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`;
+        title.textContent = video.title;
+
+        // Set the click event for YouTube video
+        container.onclick = function () {
+          loadVideo(container, `https://www.youtube.com/embed/${video.id}?autoplay=1`);
+        };
+      } 
+      // Google Drive Video URL (Custom Thumbnail Placeholder)
+      else if (video.type === 'drive') {
+        thumbnail.src = 'https://via.placeholder.com/560x315.png?text=Google+Drive+Video'; // Custom image
+        title.textContent = video.title;
+
+        // Set the click event for Google Drive video
+        container.onclick = function () {
+          loadVideo(container, `https://drive.google.com/file/d/${video.id}/preview`);
+        };
+      }
+
+      return clone;
+    }
+
+    // Function to load video on click
+    function loadVideo(container, url) {
+      container.innerHTML = `<iframe width="560" height="315"
+        src="${url}"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen></iframe>`;
+    }
+
+    // List of videos (YouTube and Google Drive links)
+    const videos = [
+      { type: 'youtube', id: '3z0aiFowL1Q', title: 'Video 1 (YouTube)' },
+      { type: 'youtube', id: 'aVHB5ppzSyA', title: 'Video 2 (YouTube)' },
+      { type: 'youtube', id: 'bNA7g1o3Nfg', title: 'Video 3 (YouTube)' },
+      { type: 'youtube', id: 'DcOe2_DS5mc', title: 'Video 4 (YouTube)' },
+      { type: 'youtube', id: 'C1kYkIHeFwU', title: 'Video 5 (YouTube)' },
+      { type: 'drive', id: '1ZQR25hG2xGCMMwQvs5J8DiAjXZr1-GFV', title: 'Video 6 (Google Drive)' },
+      { type: 'drive', id: '12dbDdETDAxHcsbBcY3k29fB8f9THMD_3', title: 'Video 7 (Google Drive)' }
+    ];
+
+    // Add each video card to the container
+    const container = document.getElementById('container');
+    videos.forEach(video => {
+      container.appendChild(createVideoCard(video));
+    });
+  </script>
+</body>
+</html>

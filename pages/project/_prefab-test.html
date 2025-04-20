@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Card Prefab</title>
+</head>
+<body>
+  <!-- Prefab Template -->
+  <template id="video-card">
+    <div class="card" style="border: 1px solid #ccc; padding: 1em; margin: 1em;">
+      <div class="title">Title Placeholder</div>
+      <div class="head">head Placeholder</div>
+      <div class="descript">description Placeholder</div>
+      <div class="tags">tags Placeholder</div>
+    </div>
+  </template>
+
+  <!-- Where cards will appear -->
+  <div id="container"></div>
+  <script>
+    function createVideoCard({ title, head, descript, tags }) {
+      const template = document.getElementById('video-card');
+      const clone = template.content.cloneNode(true);
+
+      clone.querySelector('.title').textContent = title;
+      clone.querySelector('.head').textContent = head;
+      clone.querySelector('.descript').textContent = descript;
+      clone.querySelector('.tags').textContent = tags;
+
+      return clone;
+    }
+
+    const container = document.getElementById('container');
+
+    // Add one card as an example
+    container.appendChild(createVideoCard({
+      title: "Understanding Prefabs in HTML",
+      head: "By John Doe",
+      descript: "This explains how to reuse content blocks with templates.",
+      tags: "#html #templates #reusable"
+    }));
+
+    // Add another card
+    container.appendChild(createVideoCard({
+      title: "Embedding YouTube Thumbnails",
+      head: "By Jane Dev",
+      descript: "Shows how to lazy-load YouTube videos with placeholders.",
+      tags: "#youtube #embed #js"
+    }));
+  </script>
+</body>
+</html>

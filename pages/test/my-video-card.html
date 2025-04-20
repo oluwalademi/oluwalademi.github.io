@@ -1,0 +1,27 @@
+<template id="video-card">
+    <div class="card" style="border: 1px solid #ccc; padding: 1em; margin: 1em; width: 560px;">
+      <img class="thumbnail" src="" alt="Play Video" style="width: 100%; height: 100%; object-fit: cover;">
+      <div class="title">Title Placeholder</div>
+    </div>
+  </template>
+  
+  <script>
+    class VideoCard extends HTMLElement {
+      constructor() {
+        super();
+        const template = document.getElementById('video-card');
+        const clone = template.content.cloneNode(true);
+        this.attachShadow({mode: 'open'}).appendChild(clone);
+      }
+  
+      connectedCallback() {
+        const title = this.getAttribute('title');
+        const thumbnail = this.getAttribute('thumbnail');
+        
+        this.shadowRoot.querySelector('.title').textContent = title;
+        this.shadowRoot.querySelector('.thumbnail').src = thumbnail;
+      }
+    }
+  
+    customElements.define('video-card', VideoCard);
+  </script>

@@ -1,0 +1,392 @@
+.main-frame,
+.main-frame * {
+  box-sizing: border-box;
+}
+.main-frame {
+    padding: 0px 60px 100px 60px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    margin: 0 auto;
+    flex-shrink: 0;
+    overflow-x: hidden; /* Optional: Hide overflow */
+    width: 100%;
+    background: linear-gradient(
+        to left,
+        rgba(255, 248, 248, 0.5),
+        rgba(206, 174, 149, 0.5)
+      ),
+      linear-gradient(
+        90deg,
+        rgba(174, 150, 148, 1) 0%,
+        rgba(206, 174, 149, 1) 100%
+      );
+  }
+.section-project {  
+  width: 100%;
+  min-width: 543px;
+  max-width: 1440px;
+  margin: 0 auto;
+  
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+}
+
+.sub-main-frame {
+    padding: 40px 0px 60px 0px;
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .empty {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 2px;
+    width: 100%;
+    position: relative;
+  }
+  .vidcontainer {
+    padding: 12px 0px 12px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+  }
+  .placeholder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;
+  }
+  .vidtitle {
+    color: var(--color-grey-8, #151515);
+    height: 24px;
+    text-align: left;
+    font-family: var(
+      --sarawavreillewebflowio-semantic-heading-5-upper-font-family,
+      "IbmPlexMono-Medium",
+      sans-serif
+    );
+    font-size: var(
+      --sarawavreillewebflowio-semantic-heading-5-upper-font-size,
+      1rem
+    );
+    line-height: var(
+      --sarawavreillewebflowio-semantic-heading-5-upper-line-height,
+      24px
+    );
+    font-weight: 550;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: flex-start;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .vid-placeholder {
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 12px 0px 12px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.25), -4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  .st-1-vid-placeholder {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(88, 88, 88, 0.25),
+      0px 4px 4px 0px rgba(36, 32, 32, 0.25), -4px 4px 4px 0px rgba(50, 50, 50, 0.5);
+    overflow: hidden;
+    width: 100%;
+  }
+  .video {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 512px;
+    position: relative;
+    object-fit: cover;
+    height: auto;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1240 / 512;
+  }
+  .st-1-video {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    object-fit: cover;
+    height: auto;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 392 / 592;
+  }
+  .playbtn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+    top: 50%;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
+  .long-objholder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    flex: 2;
+    max-width: 930;
+    gap: 20px;
+  }  
+  .st-1-vidcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    flex: 1;
+  }  
+.vidcontainer-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 392 / 620;
+    position: relative;
+  }
+
+
+  @media (max-width: 930px) {
+    .st-1-vidcontainer {
+      flex: 1;
+    }
+    .long-objholder {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: relative;
+      flex-shrink: 0;
+      width: 100%;
+      min-width: 530;
+      gap: 20px;
+    }  
+    .vidcontainer-holder {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 50px;
+      min-width: 700px;
+      aspect-ratio: auto;
+    }
+    .st-2-vidcontainer {
+      max-width: 500px;
+      flex: 1;
+    }
+  }
+  @media (max-width: 800px) and (min-width: 500px) {
+    /* Applies ONLY between 500px-930px */
+  }
+  @media (max-width: 800px) {
+    .vidcontainer-holder {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 50px;
+      max-width: 380px;
+      min-width: none;
+      min-width: auto;
+      width: 100%;
+    }
+    .vidcontainer-holder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-basis: 100%; 
+      width: 120%;
+      max-width: fit-content;
+      gap: 0px;
+
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      margin: 0 auto;          /* Horizontal centering safety */
+    }
+    .long-objholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      align-self: stretch;
+      min-width: auto;
+    }  
+    .st-2-vidcontainer {
+      flex: 0 0 320px;
+      width: 320px;
+      width: 100%;
+    }
+    .st-1-vidcontainer {
+      width: 392px;
+    }
+  }
+
+
+  .st-2-vidcontainer {
+    padding: 0px 0px 12px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .st-2-vid-placeholder {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .st-2-video {
+    background: #ffffff;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #b3b3b3;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .vidctnhld-one{
+    min-width: 430px;
+    gap: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .vidctnhld-two{
+    min-width: 360px;
+    width: 100%;
+    gap: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    flex-basis: 100%;
+
+    
+  }
+  @media (max-width: 800px){
+    .vidctnhld-two{
+      gap: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+      width: 100%;
+    }
+  }
+
+  .st-3-vidcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: flex-start;
+    position: relative;
+    flex: 1;
+    height: fit-content;
+    aspect-ratio: auto;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+  }  
