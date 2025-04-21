@@ -122,15 +122,9 @@ ul {
     "Montserrat-Bold",
     sans-serif
   );
-  font-size: 20px;
-  line-height: var(
-    --michael-collinspixpacom-semantic-heading-1-line-height,
-    25.2px
-  );
-  font-weight: var(
-    --michael-collinspixpacom-semantic-heading-1-font-weight,
-    600
-  );
+  font-size: 2rem;
+  line-height: 25.2px;
+  font-weight: 600;
   position: relative;
   align-self: stretch;
   display: flex;
@@ -156,18 +150,9 @@ ul {
     "SourceSansPro-Regular",
     sans-serif
   );
-  font-size: var(
-    --michael-collinspixpacom-source-sans-pro-regular-font-size,
-    12px
-  );
-  line-height: var(
-    --michael-collinspixpacom-source-sans-pro-regular-line-height,
-    21.6px
-  );
-  font-weight: var(
-    --michael-collinspixpacom-source-sans-pro-regular-font-weight,
-    400
-  );
+  font-size: 0.9rem;
+  line-height: 21.6px;
+  font-weight: 400;
 }
 .responsibility-container {
   padding: 4.3px 0px 4.89px 0px;
@@ -198,18 +183,9 @@ ul {
     "SourceSansPro-Regular",
     sans-serif
   );
-  font-size: var(
-    --michael-collinspixpacom-source-sans-pro-regular-font-size,
-    12px
-  );
-  line-height: var(
-    --michael-collinspixpacom-source-sans-pro-regular-line-height,
-    21.6px
-  );
-  font-weight: var(
-    --michael-collinspixpacom-source-sans-pro-regular-font-weight,
-    700
-  );
+  font-size: 0.8rem;
+  line-height: 21.6px;
+  font-weight: 700;
 }
 
 .bold-text {
@@ -220,14 +196,8 @@ ul {
     "SourceSansPro-Regular",
     sans-serif
   );
-  font-size: var(
-    --michael-collinspixpacom-source-sans-pro-regular-font-size,
-    12px
-  );
-  line-height: var(
-    --michael-collinspixpacom-source-sans-pro-regular-line-height,
-    21.6px
-  );
+  font-size: 12px;
+  line-height: 21.6px;
   font-weight: 700;
   position: relative;
   align-self: stretch;
@@ -236,25 +206,16 @@ ul {
   justify-content: flex-start;
 }
 .context-text {
-  color: var(--color-black-solid, #000000);
+  color:  #000000;
   text-align: left;
   font-family: var(
     --michael-collinspixpacom-source-sans-pro-regular-font-family,
     "SourceSansPro-Regular",
     sans-serif
   );
-  font-size: var(
-    --michael-collinspixpacom-source-sans-pro-regular-font-size,
-    12px
-  );
-  line-height: var(
-    --michael-collinspixpacom-source-sans-pro-regular-line-height,
-    21.6px
-  );
-  font-weight: var(
-    --michael-collinspixpacom-source-sans-pro-regular-font-weight,
-    400
-  );
+  font-size: 1rem;
+  line-height: 21.6px;
+  font-weight: 400;
   position: relative;
   align-self: stretch;
   display: flex;
