@@ -117,13 +117,9 @@ ul {
 .heading-text {
   color: var(--color-grey-5, #0e0e0e);
   text-align: left;
-  font-family: var(
-    --michael-collinspixpacom-semantic-heading-1-font-family,
-    "Montserrat-Bold",
-    sans-serif
-  );
-  font-size: 2rem;
-  line-height: 25.2px;
+  font-family:  Montserrat, sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
   font-weight: 600;
   position: relative;
   align-self: stretch;
@@ -208,13 +204,9 @@ ul {
 .context-text {
   color:  #000000;
   text-align: left;
-  font-family: var(
-    --michael-collinspixpacom-source-sans-pro-regular-font-family,
-    "SourceSansPro-Regular",
-    sans-serif
-  );
-  font-size: 1rem;
-  line-height: 21.6px;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 14px;
+  line-height: 1.4em;
   font-weight: 400;
   position: relative;
   align-self: stretch;
