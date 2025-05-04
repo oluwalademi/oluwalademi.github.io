@@ -214,6 +214,26 @@ ul {
   align-items: center;
   justify-content: flex-start;
 }
+.context-text-wrap{
+  color:  #000000;
+  text-align: center;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 14px;
+  line-height: 1.4em;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 550; 
+  justify-content: center; 
+  text-transform: uppercase;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .context-container {
   padding: 5px 0px 5px 0px;
   display: flex;
@@ -294,6 +314,7 @@ ul {
   min-width: 400px;
   max-width: 890px;
   position: relative;
+  overflow: hidden;
 
   align-content: flex-start;
 }
@@ -312,6 +333,7 @@ ul {
   flex: 1;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .fill-display-ctr.sub1{
   background-color: #6e6e6e;
@@ -342,6 +364,10 @@ ul {
   gap: 20px;
   transition: transform 0.3s ease;
   transform-origin: center;
+}
+
+.rewo-img.video{
+  object-fit: contain;
 }
 
 .rewo-img:hover{
@@ -402,4 +428,77 @@ ul {
   border: 1px solid blanchedalmond; 
   padding: 0px 4px 0px 12px;
   background-color: rgba(63, 63, 63, 0.1);
+}
+
+
+
+
+
+
+/*Videos only*/
+.page-vid-placeholder {
+  border-radius: 12px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 12px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  max-width: 600;
+  width: fit-content;
+  align-self: center;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25), -4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.st-1-video {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  object-fit: cover;
+  height: auto;
+  position: relative;
+  width: 300;
+  aspect-ratio: 392 / 592;
+}
+.video {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 512px;
+  position: relative;
+  object-fit: cover;
+  height: auto;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1240 / 512;
+}
+.playbtn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  object-fit: cover;
+  aspect-ratio: 1;
 }

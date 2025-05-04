@@ -158,6 +158,10 @@
     position: relative;
     width: 100%;
     aspect-ratio: 1240 / 512;
+    transition: transform 0.3s ease;
+  }
+  .video:hover{
+    transform: scale(1.075);
   }
   .st-1-video {
     display: flex;
@@ -173,6 +177,10 @@
     position: relative;
     width: 100%;
     aspect-ratio: 392 / 592;
+    transition: transform 0.3s ease;
+  }
+  .st-1-video:hover{
+    transform: scale(1.075);
   }
   .playbtn {
     display: flex;
@@ -314,6 +322,7 @@
     align-self: stretch;
     flex-shrink: 0;
     position: relative;
+    overflow: hidden;
   }
   .st-2-vid-placeholder {
     display: flex;
@@ -341,6 +350,10 @@
     height: auto;
     position: relative;
     overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .st-2-video:hover{
+    transform: scale(1.075);
   }
   
   .vidctnhld-one{
