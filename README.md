@@ -4,10 +4,10 @@
 With a strong foundation in **computer science** and a deep passion for **game development**, I have dedicated my career to exploring the intersection of **technology, creativity, and interactive experiences**. My expertise in **human-computer interaction (HCI)** and **game design** drives my commitment to crafting immersive and engaging digital worlds.  
 
 ### 🎮 Skills & Expertise  
-- **Game Development:** Unity, C#, Unreal Engine  
+- **Game Development:** Unity, C#
 - **HCI & UX Research:** Player engagement, accessibility, serious games  
 - **Graphics & Animation:** 3D modeling, game physics, UI/UX design  
-- **Cross-Platform Development:** Mobile, VR, and interactive storytelling  
+- **Cross-Platform Development:** Mobile, and interactive storytelling  
 - **Mentorship & Community Building:** Supporting aspiring game developers  
 
 ### 🔬 Research Focus  
