@@ -97,6 +97,7 @@ html{
   align-items: center;
   justify-content: center;
   text-decoration: underline;
+  transition: color 0.3s ease;
 }
 .headtext:hover{
   color: #ff0051;
